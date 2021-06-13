@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstscreen">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/image1"
+        android:elevation="16dp"
+        android:focusableInTouchMode="true"
+        app:cardCornerRadius="24dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="527dp"
+            android:background="@drawable/image1" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image1"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:text="FingerSpeedGame"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="40sp"
+                android:textStyle="italic"
+
+                />
+            <com.airbnb.lottie.LottieAnimationView
+                app:lottie_autoPlay="true"
+                android:layout_width="375dp"
+                android:layout_height="201dp"
+                android:layout_marginTop="16dp"
+                app:lottie_rawRes="@raw/clock" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Keep Calm and Game on.."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+               android:textStyle="italic"
+                />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/selectCharactersSpinner"
+                android:layout_width="320dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/image2"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:hint="Select Levels"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:spinner_arrow_animate="true"
+                app:spinner_arrow_drawable="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="8dp"
+                app:spinner_arrow_show="true"
+                app:spinner_arrow_tint="@color/teal_700"
+                app:spinner_divider_color="@color/black"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/spinner_arrays"
+                app:spinner_popup_animation="dropdown"
+                app:spinner_popup_background="@color/gradient"
+                app:spinner_popup_elevation="8dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:focusableInTouchMode="true"
+        app:cardCornerRadius="16dp">
+
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Start Playing"
+            android:textAlignment="center"
+            android:textColor="#DB5A6B"
+            android:textSize="28sp"
+            android:paddingBottom="20dp"
+            android:textStyle="italic"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

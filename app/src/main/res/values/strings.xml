@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FingerSpeedGame</string>
+    <string-array name="spinner_arrays">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+
+    </string-array>
+</resources>
